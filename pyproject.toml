@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "crypto-trading"
+version = "0.1.0"
+description = "Crypto trading bot"
+authors = ["lbaud21 <lucas.baudino@outlook.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+telethon = "^1.33.1"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
