@@ -69,3 +69,15 @@ class BitgetClient:
         )
 
         return response.json()
+
+    def post(self, url, params={}, data={}):
+        headers = self._get_headers(
+            "POST",
+            url,
+            data,
+        )
+        response = requests.post(
+            url=f"{self.DOMAIN}{url}", data=data, params=params, headers=headers
+        )
+
+        return response.json()
